@@ -29,7 +29,8 @@ print(a)
 print(column_sums)
 ```
 ## Output
-![image](https://github.com/user-attachments/assets/7786746f-e9e2-4c59-8355-f1533cc56671)
+![image](https://github.com/user-attachments/assets/361016ca-df7d-498c-8c7c-81bc2a9fb5a8)
+
 
 ## Result
 Thus the python program to  find the sum of Second column in a given numpy array is executed successfully.

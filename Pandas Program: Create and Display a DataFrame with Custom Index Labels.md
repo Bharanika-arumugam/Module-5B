@@ -54,4 +54,4 @@ print(result)
 ![image](https://github.com/user-attachments/assets/969e348d-b477-480c-9f9e-d8f9bcede795)
 
 ## Result
-Thus the **Pandas** program to join the two given dataframes along columns and assign all data is executed sucessfully.
+Thus the **Pandas** program to join the two given dataframes along columns and assign all data is executed successfully.

@@ -1,7 +1,7 @@
 # NumPy Program: Column-wise Sorting of a 2D Array
 
 ## 🎯 Aim
-To write a **NumPy** program that sorts the elements of a given 2D array in ascending order.
+To write a *NumPy* program that sorts the elements of a given 2D array in ascending order.
 ## Case 1: Sort array by the second row
 ## Case 2: Sort the array by the second column
 
@@ -34,7 +34,7 @@ c. Print the sorted array
 7.End
 
 ## 🧾 Program
-``` python
+ python
 import numpy as np
 a = np.array(eval(input()))
 print("Printing Original array")
@@ -45,29 +45,29 @@ print(sorted_by_row)
 sorted_by_col = a[a[:, 1].argsort()]
 print("Sorting Original array by second column")
 print(sorted_by_col)
-```
+
 ## Output
 ![Screenshot 2025-05-24 161130](https://github.com/user-attachments/assets/1919ef72-b6ab-43e9-ad08-f3c36128449a)
 
 ## Result
-Thus the **NumPy** program that sorts the elements of a given 2D array in ascending order is executed successfully.
+Thus the *NumPy* program that sorts the elements of a given 2D array in ascending order is executed successfully.
 
  # NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
 
 ## 🎯 Aim
-To write a Python program using **NumPy** that finds the indices where elements in array `x` are greater than or equal to their corresponding elements in array `y`.
+To write a Python program using *NumPy* that finds the indices where elements in array x are greater than or equal to their corresponding elements in array y.
 
 ## 🧠 Algorithm
-1. **Import NumPy**: Import the NumPy library.
-2. **Define Arrays**: Define two NumPy arrays, `x` and `y`, with the same shape (i.e., same number of elements).
-3. **Use Boolean Indexing**: 
-   - `x > y` gives a boolean array where elements of `x` are greater than `y`.
-   - `x == y` gives a boolean array where elements of `x` are equal to `y`.
-4. **Find Indices**: Use `np.where()` to get the indices where the conditions `x >= y` are satisfied.
-5. **Print Indices**: Print the indices where the condition holds true.
+1. *Import NumPy*: Import the NumPy library.
+2. *Define Arrays*: Define two NumPy arrays, x and y, with the same shape (i.e., same number of elements).
+3. *Use Boolean Indexing*: 
+   - x > y gives a boolean array where elements of x are greater than y.
+   - x == y gives a boolean array where elements of x are equal to y.
+4. *Find Indices*: Use np.where() to get the indices where the conditions x >= y are satisfied.
+5. *Print Indices*: Print the indices where the condition holds true.
 
 ## 🧾 Program
-``` python
+ python
 import numpy as np
 a=np.array(eval(input()))
 b=np.array(eval(input()))
@@ -75,7 +75,7 @@ gr=np.where(a>b)
 eq=np.where(a==b)
 print(gr)
 print(eq)
-```
+
 ## Output
 ![image](https://github.com/user-attachments/assets/b76a25c2-4b67-4070-bdcf-a4c51cb75162)
 
@@ -85,11 +85,11 @@ Thus the python program to print the indices of the elements greater than or equ
 # NumPy Program: Replace the Second Column in a 2D Array
 
 ## 🎯 Aim
-To write a **NumPy** program that find the sum of Second column in a given numpy array.
+To write a *NumPy* program that find the sum of Second column in a given numpy array.
 
 ## 🧠 Algorithm
-1. **Import NumPy**: Start by importing the NumPy library.
-2. **Get Input**: Get a 2D NumPy array and a new column (as another array) from the user.
+1. *Import NumPy*: Start by importing the NumPy library.
+2. *Get Input*: Get a 2D NumPy array and a new column (as another array) from the user.
 
 3.Reshape the NumPy array into a 4×3 matrix.
 
@@ -104,14 +104,14 @@ To write a **NumPy** program that find the sum of Second column in a given numpy
 8.End
 
 ## 🧾 Program
-``` python
+ python
 import numpy as np
 arr = np.array(eval(input()))
 a=arr.reshape(4,3)
 column_sums=sum(a[:,1])
 print(a)
 print(column_sums)
-```
+
 ## Output
 ![image](https://github.com/user-attachments/assets/361016ca-df7d-498c-8c7c-81bc2a9fb5a8)
 
@@ -123,14 +123,14 @@ Thus the python program to  find the sum of Second column in a given numpy array
 
 ## 🎯 Aim
 
-To create and display a **DataFrame** using the **Pandas** program to join the two given dataframes along columns and assign all data.
+To create and display a *DataFrame* using the *Pandas* program to join the two given dataframes along columns and assign all data.
 
 ---
 
 ## 🧠 Algorithm
 
-1. **Import Libraries**: Import the required libraries – `pandas` and `numpy`.
-2. **Create Dictionary**: Define a dictionary.
+1. *Import Libraries*: Import the required libraries – pandas and numpy.
+2. *Create Dictionary*: Define a dictionary.
 
 3.Create DataFrames:
 
@@ -156,7 +156,7 @@ Use pd.DataFrame() to convert data2 into df2.
 ---
 
 ## 💻 Program
-``` python
+ python
 import pandas as pd
 data1 = {'s_id': ['S1', 'S2', 'S3', 'S4', 'S5'],'name': ['Dan', 'Ryder', 'Bryce', 'Bernal', 'Kwame'], 'marks': [200, 210, 190, 222, 199]}
 data2 = { 's_id': ['S4', 'S5', 'S6', 'S7', 'S8'], 'name': ['Scart', 'Willy', 'Dani', 'Kaise', 'Madeeha'], 'marks': [201, 200, 198, 219, 201]}
@@ -170,27 +170,27 @@ print()
 result = pd.concat([df1, df2], axis=1)
 print("Join the said two dataframes along columns:")
 print(result)
-```
+
 ## Output
 ![image](https://github.com/user-attachments/assets/969e348d-b477-480c-9f9e-d8f9bcede795)
 
 ## Result
-Thus the **Pandas** program to join the two given dataframes along columns and assign all data is executed successfully.
+Thus the *Pandas* program to join the two given dataframes along columns and assign all data is executed successfully.
 
 # 🧪 Pandas Program: Join Two DataFrames Along Rows
 
 ## 🎯 AIM
 
-To write a Python program using Pandas to **join two DataFrames along rows** (row-wise concatenation) and assign all data to a new DataFrame.
+To write a Python program using Pandas to *join two DataFrames along rows* (row-wise concatenation) and assign all data to a new DataFrame.
 ## 🧠 ALGORITHM
 
-1. **Import Libraries**: Import the `pandas` library.
-2. **Create First DataFrame**: Use a dictionary to create `student_data1`.
-3. **Create Second DataFrame**: Use another dictionary to create `student_data2`.
-4. **Concatenate DataFrames**: Use `pd.concat()`  to concatenate both DataFrames row-wise.
-5. **Display Result**: Print the new combined DataFrame.
+1. *Import Libraries*: Import the pandas library.
+2. *Create First DataFrame*: Use a dictionary to create student_data1.
+3. *Create Second DataFrame*: Use another dictionary to create student_data2.
+4. *Concatenate DataFrames*: Use pd.concat()  to concatenate both DataFrames row-wise.
+5. *Display Result*: Print the new combined DataFrame.
 ## 💻 Program
-``` python
+ python
 import pandas as pd
 d=eval(input())
 df=pd.DataFrame(d)
@@ -200,8 +200,8 @@ new=eval(input())
 df.loc[len(df)]=new
 print("combined Dataframe",end='\n ')
 print(df)
-```
+
 ## Output
 ![image](https://github.com/user-attachments/assets/c4e08917-65a0-4d8d-95f3-e72b1440bd2a)
 ## Result
-Thus the Python program using Pandas to **join two DataFrames along rows** is executed successfully.  
+Thus the Python program using Pandas to *join two DataFrames along rows* is executed successfully.
